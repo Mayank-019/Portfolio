@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <title>Mayank Kanojia - Portfolio</title>
+
+    <style>
+        /* Ensure the navbar shows with a transition effect */
+        .nav-show {
+            background-color: rgba(53, 50, 115, 0.8);
+            transition: background-color 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-200 font-sans">
+    <!-- navbar section -->
+    <nav class="fixed w-full h-auto bg-transparent flex justify-between p-5 z-20">
+        <div class="text-[#f9cfb7] text-3xl md:text-4xl font-bold md:ml-[40px]">
+            Portfolio.
+        </div>
+        <ul class="md:flex hidden gap-2 text-slate-200 items-center text-xl font-medium md:mr-[40px] md:gap-8">
+            <li class="hover:text-[#f9cfb7] cursor-pointer"><a href="#home">Home</a></li>
+            <li class="hover:text-[#f9cfb7] cursor-pointer"><a href="#about">About</a></li>
+            <li class="hover:text-[#f9cfb7] cursor-pointer"><a href="#skills">Skills</a></li>
+            <li class="hover:text-[#f9cfb7] cursor-pointer"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="md:hidden">
+            <a class="text-4xl text-[#f9cfb7]" href="#">&#8801;</a>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- hero section -->
+    <header id="home" class="relative w-full h-screen">
+        <img class="absolute inset-0 w-full h-full object-cover -z-10" src="./assets/bgImg.jpg" alt="backgroundImage">
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+            <h2 class="text-[2rem] md:text-[3.5rem] text-[#353273] font-bold">Hello,</h2>
+            <h1 class="text-[2.5rem] md:text-[4.5rem] text-[#353273] font-extrabold pb-2 animate-slide-in">I'm Mayank
+                Kanojia</h1>
+            <h2 class="text-[2rem] md:text-[2.5rem] text-[#353273] font-bold">Fullstack Developer</h2>
+        </div>
+    </header>
+    <!-- hero section ends here -->
+
+    <!-- About section -->
+    <section id="about" class="p-10">
+        <div class="w-full flex flex-wrap justify-evenly">
+            <div class="w-[450px] h-[450px] bg-slate-200 rounded-xl">
+                <img class="w-[400px] h-[400px] rounded-xl m-2 md:m-6 drop-shadow-md" src="./assets/LinkedInImage.png"
+                    alt="MyImg">
+            </div>
+            <div class="w-[800px] md:h-[450px] bg-slate-200">
+                <h1 class="text-[#353273] text-5xl font-bold p-5 text-center">About Me</h1>
+                <div class="w-20 h-1 border-b-4 border-[#ef92a5] rounded-2xl ml-40 md:ml-[22rem] mb-4"></div>
+                <div>
+                    <p class="text-lg text-justify leading-10">I'm Mayank Kanojia, a tech enthusiast with a solid
+                        foundation in Python, Java, HTML, CSS,
+                        JavaScript, and Tailwind CSS. Currently, I am pursuing my BTech degree at Manav Rachna
+                        University,
+                        where I've developed a passion for creating user-friendly websites. As a web development
+                        enthusiast, I am always eager to learn and experiment with new technologies, pushing the
+                        boundaries of what's possible. My approach to web development is precise and user-focused,
+                        always aiming to create intuitive and engaging experiences. Beyond coding, I have a passion
+                        for football, which fuels my team spirit and strategic thinking. Let's collaborate to bring
+                        your digital ideas to life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section ends here -->
+
+    <!-- skills section -->
+    <section id="skills" class="p-10">
+        <div class="w-full flex flex-wrap justify-evenly">
+            <div class="w-[450px] h-[450px] bg-slate-200 rounded-xl">
+                <img class="w-[400px] h-[400px] rounded-xl m-2 md:m-6 drop-shadow-md" src="./assets/skillsImg.jpg"
+                    alt="MyImg">
+            </div>
+            <div class="w-[800px] md:h-[450px] bg-slate-200">
+                <div>
+                    <h1 class="text-[#353273] text-5xl font-bold flex justify-center py-4">Skills</h1>
+                    <div class="w-20 h-1 border-b-4 border-[#ef92a5] rounded-2xl ml-40 md:ml-[22rem] mb-4"></div>
+                    <div class="mx-[20%] md:mx-auto">
+                        <div>
+                            <h2 class="text-xl font-semibold">HTML</h2>
+                            <div class="w-80 md:w-[80%] bg-purple-500/20 h-2 rounded-full">
+                                <div class="bg-purple-500 w-[94%] h-full rounded-full"></div>
+                            </div>
+                            <span class="text-lg font-semibold p-2">94%</span>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold">CSS</h2>
+                            <div class="w-80 md:w-[80%] bg-purple-500/20 h-2 rounded-full">
+                                <div class="bg-purple-500 w-[70%] h-full rounded-full"></div>
+                            </div>
+                            <span class="text-lg font-semibold p-2">70%</span>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Javascript</h2>
+                            <div class="w-80 md:w-[80%] bg-purple-500/20 h-2 rounded-full">
+                                <div class="bg-purple-500 w-[78%] h-full rounded-full"></div>
+                            </div>
+                            <span class="text-lg font-semibold p-2">78%</span>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Tailwind CSS</h2>
+                            <div class="w-80 md:w-[80%] bg-purple-500/20 h-2 rounded-full">
+                                <div class="bg-purple-500 w-[80%] h-full rounded-full"></div>
+                            </div>
+                            <span class="text-lg font-semibold p-2">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section ends here -->
+
+    <!-- contact section -->
+    <section id="contact" class="p-10">
+        <div class="w-full flex flex-wrap justify-evenly">
+            <div class="w-[800px] md:h-[800px] bg-slate-200">
+                <div>
+                    <h1 class="text-[#353273] text-5xl font-bold flex justify-center py-4">Contact Me</h1>
+                    <div class="w-20 h-1 border-b-4 border-[#ef92a5] rounded-2xl ml-40 md:ml-[22rem] mb-4 items-center">
+                    </div>
+                    <form class="flex flex-col items-center w-full bg-gray-100 p-8 rounded-lg shadow-lg">
+                        <div class="form-group mb-5 w-full">
+                            <label for="name" class="block text-lg text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full p-3 text-gray-700 border border-gray-300 rounded-md">
+                        </div>
+                        <div class="form-group mb-5 w-full">
+                            <label for="email" class="block text-lg text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full p-3 text-gray-700 border border-gray-300 rounded-md">
+                        </div>
+                        <div class="form-group mb-5 w-full">
+                            <label for="subject" class="block text-lg text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required
+                                class="w-full p-3 text-gray-700 border border-gray-300 rounded-md">
+                        </div>
+                        <div class="form-group mb-5 w-full">
+                            <label for="message" class="block text-lg text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full p-3 text-gray-700 border border-gray-300 rounded-md"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-[#353273] text-white text-lg py-2 px-6 rounded-md hover:bg-[#f9cfb7] hover:text-[#4b4c4d]">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- footer section -->
+    <footer class="bg-white p-10">
+        <div class="flex flex-col items-center">
+            <div class="social flex justify-center mb-6">
+                <a href="#"
+                    class="text-[#353273] bg-white border-2 border-[#353273] rounded-full w-10 h-10 flex items-center justify-center text-xl mx-2 opacity-75 transition-colors duration-300 hover:bg-[#353273] hover:text-white hover:opacity-90 hover:scale-110">
+                    <i class="icon ion-social-linkedin"></i>
+                </a>
+                <a href="#"
+                    class="text-[#353273] bg-white border-2 border-[#353273] rounded-full w-10 h-10 flex items-center justify-center text-xl mx-2 opacity-75 transition-colors duration-300 hover:bg-[#353273] hover:text-white hover:opacity-90 hover:scale-110">
+                    <i class="icon ion-social-github"></i>
+                </a>
+                <a href="#"
+                    class="text-[#353273] bg-white border-2 border-[#353273] rounded-full w-10 h-10 flex items-center justify-center text-xl mx-2 opacity-75 transition-colors duration-300 hover:bg-[#353273] hover:text-white hover:opacity-90 hover:scale-110">
+                    <i class="icon ion-social-twitter"></i>
+                </a>
+                <a href="#"
+                    class="text-[#353273] bg-white border-2 border-[#353273] rounded-full w-10 h-10 flex items-center justify-center text-xl mx-2 opacity-75 transition-colors duration-300 hover:bg-[#353273] hover:text-white hover:opacity-90 hover:scale-110">
+                    <i class="icon ion-social-instagram"></i>
+                </a>
+            </div>
+            <p class="text-[#353273] text-sm mt-4 mb-0">Made with ❤️ by Mayank Kanojia</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
