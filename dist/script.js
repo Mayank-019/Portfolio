@@ -7,3 +7,8 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('nav-show');
     }
 });
+
+const navDialog = document.getElementById('nav-dialog');
+function handleMenu() {
+    navDialog.classList.toggle('hidden');
+}
