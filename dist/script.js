@@ -9,6 +9,15 @@ window.addEventListener('scroll', function() {
 });
 
 const navDialog = document.getElementById('nav-dialog');
+const navLinks = document.querySelectorAll("#nav-dialog a");
+
 function handleMenu() {
     navDialog.classList.toggle('hidden');
 }
+
+// Close the navbar when clicking on a navigation link
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navDialog.classList.add('hidden');
+    });
+});
