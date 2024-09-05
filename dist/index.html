@@ -34,10 +34,11 @@
         <div class="md:hidden">
             <button class="text-4xl text-[#f9cfb7]" onclick="handleMenu()">&#8801;</button>
         </div>
-
-        <div id="nav-dialog" class="hidden fixed bg-[#7557a1] z-10 md:hidden inset-0 p-4">
-            <div id="nav-bar" class="flex justify-between">
-                <div class="text-[#f9cfb7] text-3xl md:text-4xl font-bold md:ml-[40px]">
+        <!-- hamburger(side menu for mobiles screens) -->
+        <div id="nav-dialog"
+            class="fixed bg-[#7557a1] z-10 inset-0 p-4 transform translate-x-full opacity-0 transition duration-300 ease-in-out md:hidden">
+            <div class="flex justify-between">
+                <div class="text-[#f9cfb7] text-3xl md:text-4xl font-bold">
                     Portfolio.
                 </div>
                 <div class="md:hidden">
@@ -46,11 +47,15 @@
             </div>
             <div class="mt-6">
                 <a href="#home" class="text-[#f9cfb7] font-medium m-3 p-3 hover:bg-[#3b2971] block rounded-lg">Home</a>
-                <a href="#about" class="text-[#f9cfb7] font-medium m-3 p-3 hover:bg-[#3b2971] block rounded-lg">About</a>
-                <a href="#skills" class="text-[#f9cfb7] font-medium m-3 p-3 hover:bg-[#3b2971] block rounded-lg">Skills</a>
-                <a href="#contact" class="text-[#f9cfb7] font-medium m-3 p-3 hover:bg-[#3b2971] block rounded-lg">Contact</a>
+                <a href="#about"
+                    class="text-[#f9cfb7] font-medium m-3 p-3 hover:bg-[#3b2971] block rounded-lg">About</a>
+                <a href="#skills"
+                    class="text-[#f9cfb7] font-medium m-3 p-3 hover:bg-[#3b2971] block rounded-lg">Skills</a>
+                <a href="#contact"
+                    class="text-[#f9cfb7] font-medium m-3 p-3 hover:bg-[#3b2971] block rounded-lg">Contact</a>
             </div>
         </div>
+        <!-- hamburger(side menu for mobiles screens) -->
     </nav>
     <!-- navbar ends here -->
 

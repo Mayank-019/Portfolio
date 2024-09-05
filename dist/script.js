@@ -12,12 +12,20 @@ const navDialog = document.getElementById('nav-dialog');
 const navLinks = document.querySelectorAll("#nav-dialog a");
 
 function handleMenu() {
-    navDialog.classList.toggle('hidden');
+    // Toggle the translate and opacity classes
+    if (navDialog.classList.contains('translate-x-full')) {
+        navDialog.classList.remove('translate-x-full', 'opacity-0');
+        navDialog.classList.add('translate-x-0', 'opacity-100');
+    } else {
+        navDialog.classList.add('translate-x-full', 'opacity-0');
+        navDialog.classList.remove('translate-x-0', 'opacity-100');
+    }
 }
 
-// Close the navbar when clicking on a navigation link
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
-        navDialog.classList.add('hidden');
+        // Hide the menu when a link is clicked
+        navDialog.classList.add('translate-x-full', 'opacity-0');
+        navDialog.classList.remove('translate-x-0', 'opacity-100');
     });
 });
